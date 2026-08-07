@@ -1,0 +1,3 @@
+C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/build/CMakeFiles/LifeSimulation.dir
+C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/build/CMakeFiles/edit_cache.dir
+C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/build/CMakeFiles/rebuild_cache.dir
