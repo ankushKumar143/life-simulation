@@ -38,6 +38,26 @@ The project simulates cellular automata on an interactive grid where cells evolv
 <img width="997" height="682" alt="image" src="https://github.com/user-attachments/assets/01c2a0e2-12d0-47c8-8ab5-513b4ae0c5ff" />
 <img width="1000" height="683" alt="image" src="https://github.com/user-attachments/assets/72f0976e-96b6-4d42-be81-a6622a098a82" />
 
+...
+
+## How It Works
+
+Each cell has two possible states:
+
+- Alive
+- Dead
+
+Every generation, each cell checks its eight neighboring cells.
+
+- Fewer than 2 neighbors → dies
+- 2 or 3 neighbors → survives
+- More than 3 neighbors → dies
+- Exactly 3 neighbors → dead cell becomes alive
+
+The next generation is calculated on a separate grid so that all cells update simultaneously.
+
+...
+
 ## Project Structure
 
 ```text
@@ -74,20 +94,6 @@ life/
 | Toggle Cell | Left Click |
 | Draw Cells | Left Click + Drag
 
-## How It Works
 
-Each cell has two possible states:
-
-- Alive
-- Dead
-
-Every generation, each cell checks its eight neighboring cells.
-
-- Fewer than 2 neighbors → dies
-- 2 or 3 neighbors → survives
-- More than 3 neighbors → dies
-- Exactly 3 neighbors → dead cell becomes alive
-
-The next generation is calculated on a separate grid so that all cells update simultaneously.
 
 ```
