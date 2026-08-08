@@ -80,6 +80,8 @@ life/
 ├── README.md
 └── .gitignore
 
+```
+
 ## Controls
 
 | Action | Control |
@@ -93,7 +95,3 @@ life/
 | Reset | `R` |
 | Toggle Cell | Left Click |
 | Draw Cells | Left Click + Drag
-
-
-
-```
