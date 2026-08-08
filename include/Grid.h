@@ -1,6 +1,7 @@
 #pragma once
 #include "CellState.h"
 #include <vector>
+#include "Pattern.h"
 
 class Grid
 {
@@ -12,6 +13,10 @@ public:
 
     bool isAlive(int row, int col) const;
     void setAlive(int row, int col);
+    void toggleCell(int row, int col);
+    void clear();
+    void loadPattern(Pattern pattern);
+    int countAliveCells() const;
 
 private:
     int countNeighbors(int row, int col) const;

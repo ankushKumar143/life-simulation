@@ -1,14 +1,114 @@
 #include "Grid.h"
 #include "CellState.h"
+#include <random>
 
 Grid::Grid()
     : grid(GRID_SIZE, std::vector<int>(GRID_SIZE, DEAD))
 {
 }
 
+int Grid::countAliveCells() const
+{
+    int count = 0;
+
+    for (int i = 0; i < GRID_SIZE; i++)
+    {
+        for (int j = 0; j < GRID_SIZE; j++)
+        {
+            if (grid[i][j] == ALIVE)
+            {
+                count++;
+            }
+        }
+    }
+
+    return count;
+}
+
+void Grid::loadPattern(Pattern pattern)
+{
+    clear();
+
+    switch (pattern)
+    {
+    case Pattern::Blinker:
+        setAlive(10, 10);
+        setAlive(10, 11);
+        setAlive(10, 12);
+        break;
+
+    case Pattern::Glider:
+        setAlive(1, 2);
+        setAlive(2, 3);
+        setAlive(3, 1);
+        setAlive(3, 2);
+        setAlive(3, 3);
+        break;
+
+    case Pattern::Beacon:
+        setAlive(0, 0);
+        setAlive(0, 1);
+        setAlive(1, 0);
+        setAlive(1, 1);
+
+        setAlive(2, 2);
+        setAlive(2, 3);
+        setAlive(3, 2);
+        setAlive(3, 3);
+        break;
+
+    case Pattern::Toad:
+        setAlive(0, 1);
+        setAlive(0, 2);
+
+        setAlive(1, 0);
+        setAlive(1, 1);
+        setAlive(1, 2);
+        break;
+
+    case Pattern::Random:
+        std::random_device rd;
+        std::mt19937 generator(rd());
+        std::uniform_int_distribution<int> distribution(0, 1);
+
+        for (int i = 0; i < GRID_SIZE; i++)
+        {
+            for (int j = 0; j < GRID_SIZE; j++)
+            {
+                grid[i][j] = distribution(generator);
+            }
+        }
+
+        break;
+    }
+}
+
 int Grid::getSize() const
 {
     return GRID_SIZE;
+}
+
+void Grid::clear()
+{
+    for (int i = 0; i < GRID_SIZE; i++)
+    {
+        for (int j = 0; j < GRID_SIZE; j++)
+        {
+            grid[i][j] = DEAD;
+        }
+    }
+}
+
+void Grid::toggleCell(int row, int col)
+{
+    if (grid[row][col] == ALIVE)
+    {
+        grid[row][col] = DEAD;
+    }
+    else
+    {
+        grid[row][col] = ALIVE;
+    }
 }
 
 void Grid::setAlive(int row, int col)
