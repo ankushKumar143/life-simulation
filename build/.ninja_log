@@ -72,3 +72,6 @@
 32	2106	8079125798977484	CMakeFiles/LifeSimulation.dir/src/main.cpp.obj	ff469b0f2656cdd8
 39	2489	8079125799050489	CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj	ff1526ca854ece41
 2489	2720	8079125823539242	LifeSimulation.exe	fc67111ce1214247
+72	2046	8079134280247741	CMakeFiles/LifeSimulation.dir/src/Grid.cpp.obj	bde8f37dce2f6f24
+57	4089	8079134280061619	CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj	ff1526ca854ece41
+4089	4455	8079134320393906	LifeSimulation.exe	fc67111ce1214247
