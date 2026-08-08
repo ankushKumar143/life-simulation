@@ -1,4 +1,12 @@
 # ninja log v7
-13	150	8078111567300380	CMakeFiles/LifeSimulation.dir/src/main.cpp.obj	ff469b0f2656cdd8
-20	157	8078111567363465	CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj	ff1526ca854ece41
-158	396	8078111568750300	LifeSimulation.exe	3f3a7873db68d517
+435	4201	8078890939607752	CMakeFiles/LifeSimulation.dir/src/main.cpp.obj	ff469b0f2656cdd8
+925	4205	8078890944504999	CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj	ff1526ca854ece41
+2881	3126	8078169828627301	LifeSimulation.exe	3f3a7873db68d517
+47	1462	8078918204598935	build.ninja	34d7fdba155c20ff
+47	1462	8078918204598935	C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/build/cmake_install.cmake	34d7fdba155c20ff
+81	1192	8078918206057873	CMakeFiles/LifeSimulation.dir/src/Grid.cpp.obj	bde8f37dce2f6f24
+1194	1494	8078918217193790	LifeSimulation.exe	fc67111ce1214247
+46	606	8078922852835065	CMakeFiles/LifeSimulation.dir/src/Grid.cpp.obj	bde8f37dce2f6f24
+30	1977	8078922852665075	CMakeFiles/LifeSimulation.dir/src/main.cpp.obj	ff469b0f2656cdd8
+38	2030	8078922852751775	CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj	ff1526ca854ece41
+2031	2290	8078922872687720	LifeSimulation.exe	fc67111ce1214247

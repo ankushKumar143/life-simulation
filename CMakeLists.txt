@@ -10,6 +10,7 @@ find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System)
 add_executable(LifeSimulation
     src/main.cpp
     src/Game.cpp
+    src/Grid.cpp
 )
 
 target_include_directories(LifeSimulation PRIVATE include)
