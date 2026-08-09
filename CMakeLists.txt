@@ -13,6 +13,12 @@ add_executable(LifeSimulation
     src/Grid.cpp
 )
 
+add_custom_command(TARGET LifeSimulation POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/assets
+    $<TARGET_FILE_DIR:LifeSimulation>/assets
+)
+
 target_include_directories(LifeSimulation PRIVATE include)
 
 target_link_libraries(LifeSimulation

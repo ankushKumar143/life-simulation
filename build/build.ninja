@@ -79,7 +79,7 @@ build CMakeFiles/LifeSimulation.dir/src/Grid.cpp.obj: CXX_COMPILER__LifeSimulati
 build LifeSimulation.exe: CXX_EXECUTABLE_LINKER__LifeSimulation_ CMakeFiles/LifeSimulation.dir/src/main.cpp.obj CMakeFiles/LifeSimulation.dir/src/Game.cpp.obj CMakeFiles/LifeSimulation.dir/src/Grid.cpp.obj | C$:/msys64/ucrt64/lib/libsfml-graphics.dll.a C$:/msys64/ucrt64/lib/libsfml-window.dll.a C$:/msys64/ucrt64/lib/libsfml-system.dll.a
   LINK_LIBRARIES = C:/msys64/ucrt64/lib/libsfml-graphics.dll.a  C:/msys64/ucrt64/lib/libsfml-window.dll.a  C:/msys64/ucrt64/lib/libsfml-system.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LifeSimulation.dir
-  POST_BUILD = cd .
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\ankush\OneDrive\Desktop\Coding Playground\life\build" && C:\msys64\ucrt64\bin\cmake.exe -E copy_directory "C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/assets" "C:/Users/ankush/OneDrive/Desktop/Coding Playground/life/build/assets""
   PRE_LINK = cd .
   TARGET_FILE = LifeSimulation.exe
   TARGET_IMPLIB = libLifeSimulation.dll.a
